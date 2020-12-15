@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment-1</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 d-none d-md-block">
+              <i class="fab fa-facebook-square theme-icon"></i>
+              <i class="fab fa-twitter theme-icon"></i>
+              <i class="fab fa-youtube theme-icon"></i>
+              <i class="fab fa-instagram theme-icon"></i>
+            </div>
+            <div class="col-md-5 offset-md-4 mt-2 d-flex justify-content-md-end col-11">
+              <div class="text-md-end me-1 mt-1 col-5">Order tracking</div>
+              <div class="text-md-end mx-1 mt-1 col-1">Help</div>
+              <div class="text-md-end ms-1 col-4">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle me-0 pe-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="assets/images/lang/en.svg" class="img-fluid" height="5" width="30">English (US)
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">English (UK)</a></li>
+                      <li><a class="dropdown-item" href="#">Spanish (ES)</a></li>
+                      <li><a class="dropdown-item" href="#">Arabic (AR)</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-1 col-3">
+                        <nav class="navbar navbar-dark">
+                            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <ul class="dropdown-menu d-block rounded-0">
+                              <li><a class="dropdown-item border-bottom" href="#">Home</a></li>
+                              <li><a class="dropdown-item border-bottom" href="#">About Us</a></li>
+                              <li><a class="dropdown-item border-bottom" href="#">Gallery</a></li>
+                              <li><a class="dropdown-item border-bottom" href="#">Enquiry</a></li>
+                              <li><a class="dropdown-item border-sm-bottom" href="#">Contact</a></li>
+                              <li><hr class="dropdown-divider d-md-none"></li>
+                              <li><a class="dropdown-item d-md-none border-bottom" href="#">Login</a></li>
+                              <li><a class="dropdown-item d-md-none" href="#">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <div class="input-group mt-2">
+                          <input type="text" class="form-control" placeholder="Search something..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <button class="btn text-white bg-dark" type="button" id="button-addon2">
+                              <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 offset-md-2 d-flex col-3 justify-content-center">
+                        <button type="button" class="btn position-relative header-icon">
+                          <i class="fas fa-shopping-cart"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9 <span class="visually-hidden">unread messages</span></span>
+                        </button>
+                        <button type="button" class="btn position-relative header-icon d-none d-md-block">
+                                <i class="fa fa-heart"></i>
+                        </button>
+                        <button type="button" class="btn position-relative header-icon d-none d-md-block">
+                                <i class="fa fa-user"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-2 d-none d-md-block">
+                        <div class="">
+                            <a class="ms-3 my-0 text-dark text-decoration-none" href="#">Join Elma</a>
+                        </div>
+                        <div class="">
+                             <div class="dropdown">
+                              <button class="btn dropdown-toggle fs-5 mt-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                               My Account
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Register</a></li>
+                                <li><a class="dropdown-item" href="#">Forget Password?</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <section class="first-section py-5">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                                <span class="text-uppercase">Sony wh-h910n</span>
+                                <h2 class=" animate__animated animate__fadeInDown">Best in Hi-Res and<br>Noise Cancelling</h2>
+                                <p class=" animate__animated animate__fadeInUp">Experience finely tured noise-cancelling performance in a comfortable headphone long-lasting battery life plus quick charging keeps you listening for up to 35 hours since start.</p>
+                                <div class=" animate__animated animate__fadeInUp">
+                                  <a class="btn btn-dark me-2" href="#" role="button">Buy now for $234</a>
+                                  <a href="#" class="btn btn-outline-secondary" aria-current="page">Learn More</a>
+                                </div>
+                        </div>
+                        <div class="col-md-6 d-none d-md-block">
+                            <img src="assets/images/slider/slider1.png" class="text-end p-5 d-block w-75 w-md-50 img-fluid  mx-auto  animate__animated animate__fadeInRight" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                                <span class="text-uppercase">Sony wh-h910n</span>
+                                <h2 class=" animate__animated animate__fadeInDown">Best in Hi-Res and<br>Noise Cancelling</h2>
+                                <p class=" animate__animated animate__fadeInUp">Experience finely tured noise-cancelling performance in a comfortable headphone long-lasting battery life plus quick charging keeps you listening for up to 35 hours since start.</p>
+                                <div class=" animate__animated animate__fadeInUp">
+                                  <a class="btn btn-dark me-2" href="#" role="button">Buy now for $234</a>
+                                  <a href="#" class="btn btn-outline-secondary" aria-current="page">Learn More</a>
+                                </div>
+                        </div>
+                        <div class="col-md-6 d-none d-md-block">
+                            <img src="assets/images/slider/slider1.png" class="text-end p-5 d-block w-75 w-md-50 img-fluid  mx-auto  animate__animated animate__fadeInRight" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 py-5 border">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/images/icon/free-delivery.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="h5">Free Shipping</div>
+                                <div class="" style="font-size: 12px;">Free delivery for all orders</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 py-5 border">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/images/icon/money-back.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="h5">Money Guarantee</div>
+                                <div class="" style="font-size: 12px;">30 days money back</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 py-5 border">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/images/icon/headphone-symbol.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="h5">24/7 Support</div>
+                                <div class="" style="font-size: 12px;">Friendly 24/7 support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 py-5 border">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/images/icon/credit-card.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="h5">Secure Payment</div>
+                                <div class="" style="font-size: 12px;">All cards accepted</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  </body>
+</html>
